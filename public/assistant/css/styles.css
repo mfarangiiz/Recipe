@@ -1,0 +1,766 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: rgb(243, 102, 102); /* Menyuning fon rangi */
+    display: flex;
+    justify-content: space-between; /* Sayt nomi va admin elementlarini ajratish */
+    align-items: center;
+    padding: 10px 20px;
+    height: 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.site-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+
+.admin-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Elementlarni chapga joylashtiradi */
+    gap: 20px; /* Elementlar orasidagi bo'shliq */
+    margin-right: 10px; /* Adminni o'ngga surish */
+    position: relative;
+}
+
+.user-logo {
+    width: 40px;  /* User logosi o'lchami */
+    height: 40px; /* User logosi o'lchami */
+    border-radius: 50%;
+}
+
+#adminDropdown {
+    text-decoration: none; /* Chiziqni olib tashlash */
+    color: #fff; /* Yozuv rangini oq qilish */
+    margin-left: 10px; /* Admin dropdown va user logosi orasidagi bo'shliq */
+    margin-right: 25px;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.login-container, .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.login-form, .register-form {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(241, 60, 60);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.btn:hover {
+    background-color: rgb(220, 40, 40);
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: rgb(241, 60, 60);
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+
+.edit-profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;  /* Formaning maksimal kengligini oshirdik */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.profile-form {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;  /* Kengaytirildi */
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;  /* Borderlarni hisoblashda kenglikni qo'shish */
+}
+
+button.btn {
+    width: 100%;
+    padding: 12px;  /* Kengaytirildi */
+    background-color: rgb(241, 60, 60);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-sizing: border-box;  /* Borderlarni hisoblashda kenglikni qo'shish */
+}
+
+button.btn:hover {
+    background-color: rgb(220, 40, 40);
+}
+
+
+
+
+
+
+
+
+.user-notification {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Bildirishnoma va user logoni o'ngga suradi */
+}
+
+.notification {
+    position: relative;
+    margin-right: 10px; /* Bildirishnomani user logoning chap tomoniga qo'yish */
+}
+
+.notification-icon {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: #fff;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    display: none; /* Badj boshlang'ichda yashirin */
+}
+
+.user-logo {
+    width: 30px;  /* Bildirishnoma bilan bir xil o'lchamda */
+    height: 30px; /* Bildirishnoma bilan bir xil o'lchamda */
+    border-radius: 50%;
+    margin-left: 10px; /* User logoni bildirishnoma ikonkasi bilan masofani sozlash */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+.sidebar-content {
+    display: flex;
+    height: calc(100vh - 60px); /* Navbar balandligini hisobga oladi */
+    margin-top: 60px;
+}
+
+.sidebar {
+    width: 230px;
+    background-color: #45484b;
+    color: #fff;
+    padding: 15px;
+    padding-top: 40px;
+    flex-shrink: 0;
+    height: 100%;
+    position: fixed;
+    top: 60px; /* Navbar ostida joylashadi */
+    left: 0;
+    padding-bottom: 20px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+.dropdown-sidebar {
+    position: relative;
+}
+
+.dropdown-sidebar-toggle {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.dropdown-sidebar-menu {
+    display: none;
+    margin-left: 20px;
+    flex-direction: column;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 10px; /* Elementlar orasini ochish */
+    border-radius: 5px;
+    margin: 10px 0; /* Elementlar orasini yanada ochish */
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Gorizontal markazlash */
+    align-items: center;    /* Vertikal markazlash */
+    background-color: #f8f9fa;
+    height: 100%; /* To'liq balandlik */
+}
+
+/* Admin dropdown ustidagi chiziqni olib tashlash */
+#adminDropdown {
+    text-decoration: none; /* Chiziqni olib tashlash */
+    color: #fff; /* Yozuv rangini oq qilish */
+}
+
+/* Admin dropdown hover holati */
+#adminDropdown:hover {
+    color: #fff;
+}
+
+
+
+
+
+
+.content {
+    margin-top: 10px; /* navbarning balandligi */
+    margin-left: 250px; /* sidebarning kengligi */
+   
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #f8f9fa;
+    height: 100%;
+}
+/* Table Container */
+/* Flexbox yordamida vertikal markazlash */
+.recipe-table-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Yuqoriga joylashish */
+    width: 100%; /* Jadvalni butun kenglik bo'ylab kengaytirish */
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    margin-left: 170px;
+    margin-top: 70px;
+}
+
+.recipe-table {
+    margin-top: 0; /* Jadvalni yuqoriga joylashish */
+    margin-left: 100px;
+    width: 90%; /* Jadvalning kengligini to'liq kengaytirish */
+    table-layout: fixed; /* Jadval ustunlari orasidagi kenglikni muvozanatlash */
+}
+.recipe-table th, .recipe-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.recipe-table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.recipe-table td img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.recipe-table th:nth-child(1), .recipe-table td:nth-child(1) {
+    width: 50px; /* ID ustunining kengligini 50px qilib belgilash */
+    text-align: center; /* Matnni markazlashtirish */
+}
+
+
+.recipe-table th:nth-child(5), .recipe-table td:nth-child(5) {
+    width: 120px; /* Tekshirish ustunining kengligini 120px qilib belgilash */
+    text-align: center; /* Matnni markazlashtirish */
+}
+/* Retsept Nomi ustunini kichraytirish */
+.recipe-table th:nth-child(2), .recipe-table td:nth-child(2) {
+    width: 150px; /* Retsept nomi ustunining kengligini 150px qilib belgilash */
+}
+
+/* Rasm ustunini kichraytirish */
+.recipe-table th:nth-child(4), .recipe-table td:nth-child(4) {
+    width: 100px; /* Rasm ustunining kengligini 100px qilib belgilash */
+}
+
+/* Masalliqlar ustunini kengaytirish */
+.recipe-table th:nth-child(3), .recipe-table td:nth-child(3) {
+    width: 300px; /* Masalliqlar ustunining kengligini 300px qilib belgilash */
+}
+
+
+
+/* Modal tugmalarini yonma-yon joylashtirish */
+.recipe-modal .button-container {
+    display: flex;  /* Tugmalarni yonma-yon joylashtirish */
+    justify-content: center;  /* Tugmalarni markazlashtirish */
+    gap: 15px;  /* Tugmalar orasidagi masofa */
+}
+
+/* Tugmalarni ixcham va chiroyli qilish */
+button.button {
+    padding: 8px 18px;  /* Tugmalarni biroz kichraytirish */
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;  /* Matnni kichraytirish */
+    cursor: pointer;
+    width: auto;  /* Tugmalarni o'z o'lchamida qoldirish */
+    text-align: center;  /* Matnni markazlashtirish */
+    min-width: 120px;  /* Tugmalarga minimal kenglik berish */
+    max-width: 150px;  /* Tugmalarga maksimal kenglik berish */
+    white-space: nowrap;  /* Matnni bir qatorda saqlash */
+}
+
+/* Tugmalar ranglari */
+button.yellow {
+    background-color: #ffc107;
+}
+
+button.yellow:hover {
+    background-color: #e0a800;
+}
+
+button.green {
+    background-color: #28a745;
+}
+
+button.green:hover {
+    background-color: #218838;
+}
+
+button.red {
+    background-color: #dc3545;
+}
+
+button.red:hover {
+    background-color: #c82333;
+}
+
+/* Modal styling */
+.recipe-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;  /* Modalning kengligini o'zgartirish */
+    text-align: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+}
+
+.recipe-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+/*retsept qo'shish oynasiniki*/
+
+.recipe-form-wrapper {
+    margin-top: 10px; /* Yuqoridan joylashish */
+    padding: 20px;
+    width: 700px;  /* Forma kengligi 100% */
+    max-width: none; /* Kenglikni cheklashni olib tashlash */
+    box-sizing: border-box; /* Padding va borderlar formaning kengligiga qo'shiladi */
+    background-color: #f8f9fa;
+}
+
+/* Forma elementlari */
+.recipe-form-wrapper form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Har bir element orasida bo'sh joy */
+}
+
+/* Formaning umumiy uslublari */
+.form-group {
+    width: 100%;
+}
+
+input[type="text"], textarea, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Tugmalar uchun uslublar */
+button.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+
+button.yellow {
+    background-color: #ffc107;
+}
+
+button.yellow:hover {
+    background-color: #e0a800;
+}
+
+button.green {
+    background-color: #28a745;
+}
+
+button.green:hover {
+    background-color: #218838;
+}
+
+
+
+
+/*umumiy retseptlar sahifasi uchun */
+/* Jadvalni o'rab oladigan konteyner */
+.table-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Yuqoriga joylashish */
+    width: 96%;
+   
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 70px;
+}
+
+/* Jadvalning kengligini belgilash */
+.data-table {
+    margin-top: 0;
+    margin-left: 130px;
+
+    width: 100%; /* Jadvalning kengligini belgilash */
+    border-collapse: collapse; /* Chegaralarni to'g'ri joylashishi */
+}
+
+/* Jadvaldagi hujayralar */
+.data-table th, .data-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left; /* Matnni chapdan joylashishi */
+}
+
+/* Jadval ustunlarining fon rangini o'zgartirish */
+.data-table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+/* Rasmning o'lchamini belgilash */
+.data-table td img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+/* 'Masalliqlar' ustunini sozlash */
+.data-table td:nth-child(3) { 
+    width: 200px; /* Kenglikni kichraytirish */
+    white-space: normal; /* Matnni yangi qatorga o'tkazish */
+    word-wrap: break-word; /* Matn uzun bo'lsa yangi qatorda boshlanishini ta'minlash */
+    text-align: left; /* Matnni chapdan joylashishi */
+}
+
+/* 'Kim tomonidan yaratilgan' ustunini sozlash */
+.data-table td:nth-last-child(2) {
+    width: 150px; /* Kenglikni belgilash */
+    white-space: normal; /* Matnni yangi qatorga o'tkazish uchun */
+    word-wrap: break-word; /* Matnni uzun bo'lsa yangi qatorda boshlanishini ta'minlash */
+    text-align: center; /* Matnni markazlashtirish */
+}
+
+
+/* Jadvaldagi oxirgi katak (harakatlar) uchun */
+.data-table td:last-child {
+    width: 1px; /* Kenglikni kichraytirish */
+    white-space: nowrap; /* Matnni qatorga joylashishini oldini olish */
+    text-align: center; /* Tugmalarni markazlashtirish */
+}
+
+/* Tugmalarni ustma-ust joylashishi uchun */
+.data-table td:last-child button {
+    display: block; /* Tugmalarni bitta qatorda emas, ustma-ust joylashtirish */
+    width: 100%; /* Tugmalarning kengligini 100% qilish */
+    margin-bottom: 10px; /* Tugmalar orasiga bo'shliq qo'shish */
+}
+
+.form-group.buttons {
+    display: flex;               /* Flexbox yordamida tugmalarni yonma-yon joylashtirish */
+    justify-content: center;     /* Tugmalarni markazga joylashtirish */
+    align-items: center;         /* Vertikal markazlashtirish */
+    gap: 10px;                   /* Tugmalar orasidagi masofa */
+    width: 100%;                 /* Tugmalar butun kenglikni egallashi uchun */
+    text-align: center;          /* Yana bir markazlashtirish usuli */
+}
+
+.form-group.buttons button {
+    width: auto;                 /* Tugmalar kengligi avtomatik bo'lishi kerak */
+    padding: 10px 20px;          /* Tugmalarni kengaytirish */
+}
+
+
+/* Tahrirlash tugmasi */
+button.green {
+    background-color: #28a745;
+}
+
+button.green:hover {
+    background-color: #218838;
+}
+
+/* O'chirish tugmasi */
+button.red {
+    background-color: #dc3545;
+}
+
+button.red:hover {
+    background-color: #c82333;
+}
+
+
+
+
+
+/*edit Retseptlar*/
+/* Formani umumiy ko'rinishi */
+.recipe-edit-form {
+    max-width: 800px;
+    margin: 50px auto;
+    margin-left: 180px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Har bir forma elementi uchun uslublar */
+.form-group1 {
+    margin-bottom: 20px;
+    width: 800px;
+   
+
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Tugmalarni yonma-yon joylashtirish */
+.form-group.buttons {
+    display: flex;
+    justify-content: flex-start; /* Tugmalarni chap tomonga hizalaydi */
+    gap: 10px; /* Tugmalar orasidagi masofa */
+}
+
+button.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: auto; /* Tugmalar kengligini tabiiy holga keltiradi */
+}
+
+/* Tahrirlash tugmasi */
+button.green {
+    background-color: #28a745;
+}
+
+button.green:hover {
+    background-color: #218838;
+}
+
+/* O'chirish tugmasi */
+button.yellow {
+    background-color: #ffc107;
+}
+
+button.yellow:hover {
+    background-color: #e0a800;
+}
